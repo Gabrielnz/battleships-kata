@@ -12,6 +12,22 @@ namespace Battleships.Tests
         }
 
         [Test]
+        public void Create_a_new_game() {
+            var game = new Game(5, 5);
+
+            var resultingBoard = game.Print();
+
+            var expectedBoard = @"
+     | 0 | 1 | 2 | 3 | 4 |
+   0 |   |   |   |   |   |
+   1 |   |   |   |   |   |
+   2 |   |   |   |   |   |
+   3 |   |   |   |   |   |
+   4 |   |   |   |   |   |";
+            resultingBoard.Should().Be(expectedBoard);
+        }
+
+        [Test]
         public void Acceptance_Test()
         {
             var game = new Game(10, 10);
