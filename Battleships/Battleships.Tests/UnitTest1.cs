@@ -12,7 +12,7 @@ namespace Battleships.Tests
         }
 
         [Test]
-        public void Create_a_new_game() {
+        public void Create_a_new_game_5_by_5() {
             var game = new Game(5, 5);
 
             var resultingBoard = game.Print();
@@ -24,6 +24,20 @@ namespace Battleships.Tests
    2 |   |   |   |   |   |
    3 |   |   |   |   |   |
    4 |   |   |   |   |   |";
+            resultingBoard.Should().Be(expectedBoard);
+        }
+
+        [Test]
+        public void Create_a_new_game_2_by_3() {
+            var game = new Game(2, 3);
+
+            var resultingBoard = game.Print();
+
+            var expectedBoard = @"
+     | 0 | 1 |
+   0 |   |   |
+   1 |   |   |
+   2 |   |   |";
             resultingBoard.Should().Be(expectedBoard);
         }
 
