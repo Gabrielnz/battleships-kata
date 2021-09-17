@@ -26,9 +26,72 @@ namespace Battleships.Tests
                 new Carrier(8, 4, "V")
             };
             game.AddPlayer(ships);
-
-
-
+            game.Start();
+            game.Fire(y: 0, x:2);
+            game.EndTurn();
+				  
+            game.Fire(y: 1, x:1);
+            game.EndTurn();
+            game.Fire(y: 1, x:3);
+            game.EndTurn();
+				  
+            game.Fire(y: 2, x:1);
+            game.EndTurn();
+            game.Fire(y: 2, x:7);
+            game.EndTurn();
+				  
+            game.Fire(y: 3, x:2);
+            game.EndTurn();
+            game.Fire(y: 3, x:3);
+            game.EndTurn();
+            game.Fire(y: 3, x:4);
+            game.EndTurn();
+				  
+            game.Fire(y: 4, x:1);
+            game.EndTurn();
+            game.Fire(y: 4, x:6);
+            game.EndTurn();
+            game.Fire(y: 4, x:8);
+            game.EndTurn();
+				  
+            game.Fire(y: 5, x:1);
+            game.EndTurn();
+            game.Fire(y: 5, x:2);
+            game.EndTurn();
+            game.Fire(y: 5, x:5);
+            game.EndTurn();
+            game.Fire(y: 5, x:8);
+				  
+            game.Fire(y: 6, x:3);
+            game.EndTurn();
+            game.Fire(y: 6, x:6);
+            game.EndTurn();
+            game.Fire(y: 6, x:8);
+            game.EndTurn();
+				  
+            game.Fire(y: 7, x:1);
+            game.EndTurn();
+            game.Fire(y: 7, x:5);
+            game.EndTurn();
+            game.Fire(y: 7, x:8);
+            game.EndTurn();
+				  
+            game.Fire(y: 8, x:2);
+            game.EndTurn();
+            game.Fire(y: 8, x:3);
+            game.EndTurn();
+            game.Fire(y: 8, x:5);
+            game.EndTurn();
+            game.Fire(y: 8, x:8);
+            game.EndTurn();
+				  
+            game.Fire(y: 9, x:4);
+            game.EndTurn();
+            game.Fire(y: 9, x:5);
+            game.EndTurn();
+            game.Fire(y: 9, x:6);
+            game.EndTurn();
+            game.Fire(y: 9, x: 9);
 
             var result = game.Print();
 

@@ -9,14 +9,21 @@ namespace Battleships.Tests
         {
         }
 
-        public string Print()
-        {
-            throw new System.NotImplementedException();
+        public string Print() {
+            return string.Empty;
         }
 
         internal void AddPlayer(List<Ship> ships)
         {
-            throw new NotImplementedException();
+        }
+
+        public void Start() {
+        }
+
+        public void Fire(int x, int y) {
+        }
+
+        public void EndTurn() {
         }
     }
 }           
