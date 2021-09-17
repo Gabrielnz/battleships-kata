@@ -18,12 +18,12 @@ namespace Battleships.Tests
             var resultingBoard = game.Print();
 
             var expectedBoard = @"
-     | 0 | 1 | 2 | 3 | 4 |
-   0 |   |   |   |   |   |
-   1 |   |   |   |   |   |
-   2 |   |   |   |   |   |
-   3 |   |   |   |   |   |
-   4 |   |   |   |   |   |";
+             | 0 | 1 | 2 | 3 | 4 |
+           0 |   |   |   |   |   |
+           1 |   |   |   |   |   |
+           2 |   |   |   |   |   |
+           3 |   |   |   |   |   |
+           4 |   |   |   |   |   |";
             resultingBoard.Should().Be(expectedBoard);
         }
 
@@ -34,10 +34,10 @@ namespace Battleships.Tests
             var resultingBoard = game.Print();
 
             var expectedBoard = @"
-     | 0 | 1 |
-   0 |   |   |
-   1 |   |   |
-   2 |   |   |";
+             | 0 | 1 |
+           0 |   |   |
+           1 |   |   |
+           2 |   |   |";
             resultingBoard.Should().Be(expectedBoard);
         }
 
@@ -126,17 +126,17 @@ namespace Battleships.Tests
             var result = game.Print();
 
             var expectedBoard = @"
-     | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
-   0 |   |   | o |   |   |   |   |   |   |   |
-   1 |   | o |   | o |   |   |   |   |   |   |
-   2 |   | o |   |   |   |   |   | X |   |   |
-   3 |   |   | X | X | X |   |   |   |   |   |
-   4 |   | o |   |   |   |   | g |   | c |   |
-   5 |   | o | o |   |   | o |   |   | c |   |
-   6 |   |   |   | o |   |   | o |   | c |   |
-   7 |   | X |   |   |   | d |   |   | x |   |
-   8 |   |   | o | o |   | d |   |   | o |   |
-   9 |   |   |   |   | o | x | o |   |   | X |";
+             | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+           0 |   |   | o |   |   |   |   |   |   |   |
+           1 |   | o |   | o |   |   |   |   |   |   |
+           2 |   | o |   |   |   |   |   | X |   |   |
+           3 |   |   | X | X | X |   |   |   |   |   |
+           4 |   | o |   |   |   |   | g |   | c |   |
+           5 |   | o | o |   |   | o |   |   | c |   |
+           6 |   |   |   | o |   |   | o |   | c |   |
+           7 |   | X |   |   |   | d |   |   | x |   |
+           8 |   |   | o | o |   | d |   |   | o |   |
+           9 |   |   |   |   | o | x | o |   |   | X |";
             result.Should().Be(expectedBoard);
         }
     }
