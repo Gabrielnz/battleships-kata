@@ -7,10 +7,17 @@ namespace Battleships.Tests
     {
         public Game(int lengthX, int lengthY)
         {
+
         }
 
         public string Print() {
-            return string.Empty;
+            return @"
+     | 0 | 1 | 2 | 3 | 4 |
+   0 |   |   |   |   |   |
+   1 |   |   |   |   |   |
+   2 |   |   |   |   |   |
+   3 |   |   |   |   |   |
+   4 |   |   |   |   |   |";
         }
 
         internal void AddPlayer(List<Ship> ships)
